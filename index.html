@@ -1,81 +1,124 @@
-<!doctype html public "-//W3C//DTD HTML 4.0//EN">
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta http-equiv="Reply-to" content="krzysztof.trzepla@gmail.com">
-		<meta http-equiv="Content-Language" content="pl">
-		<meta name="Keywords" content="Medycyna, Gabinet Medycyny Profilaktycznej, specjalistyczny gabinet lekarski, Barbara Kowalska Trzepla, Myślenice, myslenice, usługi medyczne, opieka profilaktyczna, profilaktyka, badania, Medycyna Pracy, gabinet lekarski, badania okresowe, rekomendacja izby lekarskiej, EKG, elektrokardiogram, badania kierowców, refundacja recept, badania wstępne, badania okresowe, opieka medyczna nad zakładami pracy">
-		<meta name="Description" content="Specjalistyczny Gabinet Lekarski (Myślenice); lek. med. Barbara Kowalska-Trzepla - lekarz chorób wewnętrznych - specjalista medycyny pracy">
-		<meta name="Robots" content="INDEX, FOLLOW">
-		<title>Gabinet Medycyny Profilaktycznej</title>
-		<script type="text/javascript" language="JavaScript" src="gabinet.js"></script>
-		<link rel="stylesheet" href="gabinet.css" type="text/css">
-	</head>
-	<body bgcolor="#FFFFFF">
-		<script type="text/javascript" language="JavaScript">wycentruj('ekg',400,96);</script>
-		<table align="center" width="720" cellspacing="10" cellpadding="0" border="0">
-			<tr>
-				<td width="50" rowspan="2" valign="top">
+	<title>Gabinet Medycyny Profilaktycznej</title>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="Medycyna, Gabinet Medycyny Profilaktycznej, specjalistyczny gabinet lekarski, Barbara Kowalska Trzepla, Myślenice, myslenice, usługi medyczne, opieka profilaktyczna, profilaktyka, badania, Medycyna Pracy, gabinet lekarski, badania okresowe, rekomendacja izby lekarskiej, EKG, elektrokardiogram, badania kierowców, refundacja recept, badania wstępne, badania okresowe, opieka medyczna nad zakładami pracy">
+	<meta name="Description" content="Specjalistyczny Gabinet Lekarski (Myślenice); lek. med. Barbara Kowalska-Trzepla - lekarz chorób wewnętrznych - specjalista medycyny pracy">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="gabinet.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<style>
+	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+	body {font-size:16px;}
+	figure {margin:8px;}
+	</style>
+	<body>
+		<!-- Sidebar/menu -->
+		<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="sidebar"><br>
+			<div class="w3-container w3-padding-64">
+				<h3><b>Medycyna Pracy</b></h3>
+			</div>
+			<div class="w3-bar-block">
+				<a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Informacje</a>
+				<a href="#uslugi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Usługi</a>
+				<a href="#lokalizacja" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lokalizacja</a>
+				<a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kontakt</a>
+			</div>
+		</nav>
+		<!-- Top menu on small screens -->
+		<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+			<a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
+			<span>Medycyna Pracy</span>
+		</header>
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="overlay"></div>
+		<!-- !PAGE CONTENT! -->
+		<div class="w3-main" style="margin-left:340px;margin-right:40px">
+			<!-- Header -->
+			<div class="w3-container" style="margin-top:80px">
+				<h1><b>Gabinet Medycyny Profilaktycznej</b></h1>
+				<h4 class="w3-text-gray"><i>lek. med. Barbara Kowalska-Trzepla</i></h4>
+			</div>
+			<!-- Section - "Informacje" -->
+			<div class="w3-row-padding" id="informacje" style="margin-top:50px">
+				<h3 class="w3-text-blue-grey"><b>Informacje</b></h3>
+				<div class="w3-half">
+					Gabinet prowadzi <i>lek. med. Barbara Kowalska-Trzepla</i>, lekarz chorób wewnętrznych i specjalista medycyny pracy z wieloletnim doświadczeniem.
 					<br>
 					<br>
-					<br>
-					<img src="graf/esc.gif" width="48" height="215" border="0" alt="ecsupal">
-				</td>
-				<td align="center" colspan="2">
-					<img src="graf/x.gif" width="1" height="70" border="0" alt="x">
-					<br>
-					<img src="graf/gab.gif" width="566" height="46" border="0" alt="Gabinet Medycyny Profilaktycznej">
-				</td>
-			</tr>
-			<tr>
-				<td valign="TOP" width="450" class="srednie">
-					<br>
-					<h3 class="nagl">Specjalistyczny Gabinet Lekarski</h3>
-					<p class="srednie" align="center">
-						lek. med. <b>Barbara Kowalska-Trzepla</b><br>
-						lekarz chorób wewnętrznych<br>
-						specjalista medycyny pracy
-					</p>
-					<h3 class="nagl">Gabinet posiada rekomendację Izby Lekarskiej</h3>
-					<p align="center">
-						<a href="javascript:okno('certyfikat.html',600,425)">
-							<img src="graf/rekom.gif" width="100" height="100" border="0" alt=" Certyfikat ">
-						</a>
-					</p>
-				</td>
-				<td align="right" valign="top" width="200">
-					<br>
-					<a href="info.html" title=" Informacje ">
-						<img src="graf/info_n.gif" width="192" height="29" border="0" alt=" Informacje ">
-					</a>
-					<br>
-					<br>
-					<a href="ofertz.html">
-						<img src="graf/ofe_n.gif" width="197" height="58" border="0" alt=" Oferta dla Zakładów Pracy ">
-					</a>
-					<br>
-					<br>
-					<a href="lokal.html">
-						<img src="graf/lok_n.gif" width="192" height="29" border="0" alt=" Lokalizacja ">
-					</a>
-					<br>
-					<br>
-					<a href="kontakt.html" title=" Kontakt ">
-						<img src="graf/kon_n.gif" width="192" height="29" border="0" alt=" Kontakt ">
-					</a>
-				</td>
-			</tr>
-		</table>
-		<table align="center" width="720" height="0" cellspacing="0" cellpadding="3" border="0">
-			<tr>
-				<td width="184" background="graf/tlo.gif" class="male">
-				</td>
-				<td width="500" class="male">
-					[modyfikacja: <script type="text/javascript" language="JavaScript">modyfikacja();</script>]
-				</td>
-				<td align="right" class="male">
-				</td>
-			</tr>
-		</table>
+					Gabinet czynny jest w poniedziałek i czwartek w godzinach od 16:00 do 19:00.
+				</div>
+				<div class="w3-half w3-center">
+					<figure>
+						<img src='imgs/rekomendacja.gif'/>
+						<figcaption class="w3-padding">Gabinet posiada rekomendację Izby Lekarskiej</figcaption>
+					</figure>
+				</div>
+			</div>
+			<!-- Section - "Usługi" -->
+			<div class="w3-container" id="uslugi" style="margin-top:50px">
+				<h3 class="w3-text-blue-grey"><b>Usługi</b></h3>
+				Gabinet oferuje:
+				<ul>
+					<li>
+						pełny zakres badań profilaktycznych pracowników
+						<ul>
+							<li>badania wstępne</li>
+							<li>badania okresowe</li>
+							<li>badania kontrolne</li>
+						</ul>
+					</li>
+					<li>
+						opiekę profilaktyczną nad Zakładami Pracy pełnioną na podstawie umowy zgodnej z Ustawą o Służbie Medycyny Pracy
+					</li>
+					<li>
+						badania lekarskie do celów sanitarno-epidemiologicznych
+					</li>
+				</ul>
+			</div>
+			<!-- Section - "Lokalizacja" -->
+			<div class="w3-container" id="lokalizacja" style="margin-top:50px">
+				<h3 class="w3-text-blue-grey"><b>Lokalizacja</b></h3>
+				<div class="w3-center">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160.83989572062998!2d19.93754673194127!3d49.834220894573896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47166fe0aa91a7b7%3A0x601cd4cb8d068f12!2sGabinet+Medycyny+Profilaktycznej+-+lek.+med.+Barbara+Kowalska-Trzepla!5e0!3m2!1spl!2spl!4v1535290224180" width="75%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- Section - "Kontakt" -->
+			<div class="w3-row-padding" id="kontakt" style="margin-top:50px">
+				<h3 class="w3-text-blue-grey"><b>Kontakt</b></h3>
+				<div class="w3-half w3-center">
+					<h4 class="w3-text-blue-grey">Adres</h4>
+					Specjalistyczny Gabinet Lekarski<br>
+					lek. med. Barbara Kowalska-Trzepla<br>
+					Rynek 17/18<br>
+					32-400 Myślenice, PL
+				</div>
+				<div class="w3-half w3-center">
+					<h4 class="w3-text-blue-grey">Rejestracja telefoniczna</h4>
+					poniedziałek i czwartek<br>
+					od 8:00 do 11:00<br>
+					tel.: <a href="tel:+48502684020">+48 502 684 020</a>
+				</div>
+			</div>
+			<!-- End page content -->
+		</div>
+		<!-- W3.CSS Container -->
+		<div class="w3-light-grey w3-container w3-padding" style="margin-top:50px;">
+			<p class="w3-right">
+				&copy; Gabinet Medycyny Profilaktycznej <script type="text/javascript">document.write((new Date()).getFullYear())</script>. All rights reserved.
+			</p>
+		</div>
+		<script>
+		// Script to open and close sidebar
+		function w3_open() {
+		document.getElementById("sidebar").style.display = "block";
+		document.getElementById("overlay").style.display = "block";
+		}
+		
+		function w3_close() {
+		document.getElementById("sidebar").style.display = "none";
+		document.getElementById("overlay").style.display = "none";
+		}
+		</script>
 	</body>
 </html>
